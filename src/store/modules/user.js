@@ -1,12 +1,12 @@
 const state = () => ({
-  user:null
-  // user : {
-  //         email:'abc@123.com', 
-  //         verified:true, 
-  //         role:'student', 
-  //         stu_no:123, 
-  //         displayName:'Kevin'
-  //       }
+  // user:null
+  user : {
+          email:'abc@123.com', 
+          verified:true, 
+          role:'student', 
+          stu_no:123, 
+          displayName:'Kevin'
+        }
 });
 
 const getters = {
@@ -47,9 +47,6 @@ const actions = {
 const mutations = {
   setUser(state, user) {
     state.user = user;
-  },
-  set_isSignin(state, isSignin) {
-    state.isSignin = isSignin;
   },
 };
 
