@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
 import router from "./routes";
-import { createStore } from "vuex"
+import store from "./store";
+
 import App from './App.vue'
 import './style.css'
+
 const app = createApp(App);
 app.use(router);
 
@@ -11,13 +13,5 @@ app.use(router);
 // import 'element-plus/dist/index.css'
 // app.use(ElementPlus)
 
-const store = createStore({
-    state() {
-        return {
-        };
-    },
-    mutations: {
-    }
-});
 app.use(store);
 app.mount("#app");

@@ -1,13 +1,18 @@
 <template>
   <div id="app">
+    <router-link to="Home">Home</router-link> | 
+    <router-link to="Register">Register</router-link> | 
+    <router-link to="Signin">Signin</router-link> | 
+    <router-link to="Student">Student</router-link> | 
+    <router-link to="Teacher">Teacher</router-link> | 
+    <router-link to="About">About</router-link>
     <router-view/>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'App'
-}
+
+
 </script>
 
 <style scoped>
